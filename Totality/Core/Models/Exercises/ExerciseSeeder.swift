@@ -17,12 +17,7 @@ struct ExerciseSeeder {
             return
         }
         
-        let definitions: [ExerciseDefinition] = [
-            barbellFlatBenchPress(),
-            inclineDumbbellBenchPress(),
-            bentOverBarbellRow90(),
-            treadmillSteadyState()
-        ]
+        let definitions: [ExerciseDefinition] = ExerciseLibrary.all
         
         for def in definitions {
             let exercise = def.makeExercise()

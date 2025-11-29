@@ -42,6 +42,9 @@ enum ImplementType: String, Codable {
     case bike
     case rower
     case elliptical
+    case airBike
+    case stairClimber
+    case stationaryBike
     case other
 }
 
@@ -59,6 +62,23 @@ enum MovementPattern: String, Codable {
     case coreAntiExtension
     case coreAntiRotation
     case rotation
+    case hipExtension
+    case hipFlexion
+    case kneeFlexion
+    case kneeExtension
+    case elbowFlexion
+    case elbowExtension
+    case horizontalAbduction
+    case abduction
+    case flexion
+    case elevation
+    case coreRotation
+    case spinalFlexion
+    case dorsiflexion
+    case calfRaise
+    case hipAbduction
+    case hipAdduction
+    case coreAntiLateralFlexion
     case other
 }
 
@@ -278,16 +298,21 @@ enum MuscleGroup: String, Codable {
     case lats
     case midBack
     case traps
+    case trapsUpper
     case biceps
+    case brachialis
+    case brachioradialis
     case triceps
     case forearms
     case abs
     case obliques
     case spinalErectors
     case glutes
+    case gluteMedius
     case quads
     case hamstrings
     case calves
+    case tibialisAnterior
     case hipFlexors
     case adductors
     case abductors
@@ -329,3 +354,4 @@ enum ExerciseRelationType: String, Codable {
     case antagonist
     case variation
 }
+
